@@ -1,0 +1,27 @@
+<html>
+<head>
+  <h1>Interactive Quiz</h1>
+</head>
+<body>
+<form>
+   <p> Full form of RAD? </p>
+    <input type="text" name="a" value="">
+   <button type="submit" onclick="answer(this.form)">Submit</button>
+</form>
+<script>
+  var correctans="Rapid Application Development"; 
+  function answer(form)
+  { 
+     var givenans=form.a.value;
+     if(givenans==correctans)
+     {
+        document.write("Correct");
+     }
+     else
+     {
+        document.write("Incorrect" + "The correct answer is Rapid Application Development");
+     }
+  }
+</script>
+</body>
+</html>    
